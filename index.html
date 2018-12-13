@@ -3,18 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>The area of a triangle</title>
+    <title>Find Leap Year</title>
     <script>
         
         
         
-        var side1 = 5;
-        var side2 = 6;
-        var side3 = 7;
-        var s = (side1 + side2 + side3)/2;
-        var area = Math.sqrt(s * ((s - side1) * (s - side2) * (s - side3)));
-        console.log("Area: ", area);
-        
+        year = window.promt("Input a Year: ");
+        x = (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+        console.log("Is "+year+" a leap year? "+ x);
         
     </script>
 </head>
@@ -22,7 +18,7 @@
 <body>
 
 
-    <h1>The area of a triangle</h1>
+    <h1>Find Leap Year</h1>
 
 
 <h4><script>
